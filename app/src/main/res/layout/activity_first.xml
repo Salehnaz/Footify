@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE3E3"
+    tools:context=".FirstActivity">
+
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="#3BCE9C">
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/heading_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/heading"
+        android:paddingLeft="20sp"
+        android:paddingTop="20dp"
+        android:text="Find your football"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_slogan"
+        android:paddingTop="25sp" />
+
+    <TextView
+        android:id="@+id/lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerview"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/heading"
+        android:text="League"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <GridLayout
+        android:id="@+id/grid_id"
+        android:layout_below="@+id/lg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:rowCount="2"
+        android:columnCount="2">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:backgroundTint="#fff"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/premierlg"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:backgroundTint="#fff"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/laliga"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:backgroundTint="#fff"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bundasliga"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:backgroundTint="#fff"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/seraia"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </GridLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/grid_id"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:backgroundTint="#fff"
+        android:layout_margin="10dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/uefa"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
